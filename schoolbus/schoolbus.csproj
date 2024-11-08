@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\103184_checkmark_yes_ok_check_icon.png" />
+    <None Remove="Images\1564502_basket_delete_remove_icon.png" />
+    <None Remove="Images\3688460_pencil_text_update_write_draw_icon.png" />
+    <None Remove="Images\383124_info_icon.png" />
+    <None Remove="Images\9112513_bars_solid_icon.png" />
+    <None Remove="Images\schoolbus612x612.jpg" />
+    <None Remove="Images\welcome.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\103184_checkmark_yes_ok_check_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\1564502_basket_delete_remove_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\3688460_pencil_text_update_write_draw_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\383124_info_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\9112513_bars_solid_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\schoolbus612x612.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\welcome.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.26">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary_Data_Access\ClassLibrary_Data_Access.csproj" />
+    <ProjectReference Include="..\ClassLibrary_Models\ClassLibrary_Models.csproj" />
+  </ItemGroup>
+
+</Project>

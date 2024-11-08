@@ -1,0 +1,29 @@
+﻿<Window x:Class="schoolbus.Views.ViewWindows.New_Parent_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:schoolbus.Views.ViewWindows"
+        mc:Ignorable="d"
+        Title="New_Parent_Window" Height="600" Width="450" ResizeMode="NoResize" WindowStyle="SingleBorderWindow"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="New Parent" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center" Margin="15"></Label>
+        <TextBox Name="firstname_textbox" GotFocus="_focus" LostFocus="_lost_focus" Grid.Row="1" Height="40" VerticalAlignment="Top" Text="Firstname" VerticalContentAlignment="Center" Margin="15,15,30,15"></TextBox>
+        <TextBox Name="lastname_textbox" GotFocus="_focus" LostFocus="_lost_focus"  Grid.Row="2" Height="40" VerticalAlignment="Top" Text="Lastname" VerticalContentAlignment="Center" Margin="15,15,30,15"></TextBox>
+        <TextBox Name="phone_textbox" GotFocus="_focus" LostFocus="_lost_focus"  Grid.Row="3" Height="40" VerticalAlignment="Top" Text="Phone" VerticalContentAlignment="Center" Margin="15,15,30,15"></TextBox>
+        <TextBox Name="username_textbox" GotFocus="_focus" LostFocus="_lost_focus"  Grid.Row="4" Height="40" VerticalAlignment="Top" Text="Username" VerticalContentAlignment="Center" Margin="15,15,30,15"></TextBox>
+        <TextBox Name="password_textbox" GotFocus="_focus" LostFocus="_lost_focus"  Grid.Row="5" Height="40" VerticalAlignment="Top" Text="Password" VerticalContentAlignment="Center" Margin="15,15,30,15"></TextBox>
+        <Button Click="create_click" VerticalAlignment="Center" Grid.Row="6" Content="Create" FontSize="14" Foreground="White" Background="DarkOrange" Width="80" HorizontalAlignment="Right" Height="40" BorderThickness="0" Margin="0,0,30,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Button>
+
+    </Grid>
+</Window>

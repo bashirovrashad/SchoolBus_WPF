@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="schoolbus.User_Controls_for_Schoolbus.UserControl_Ride"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:schoolbus.User_Controls_for_Schoolbus"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="DarkOrange" Height="280" Width="400">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+
+            <Button Width="50" Height="50" Margin="5" Background="White"  Name="uc_noqte" Grid.Column="0"  Click="noqte_click" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="0">
+
+                <Image Source="..\Images\9112513_bars_solid_icon.png"></Image>
+            </Button>
+            <Button Click="update_click" Width="50" Height="50"  Margin="5" x:Name="Update_button" Grid.Column="1"  Visibility="Collapsed"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" BorderThickness="0" >
+                <Image Source="..\Images\3688460_pencil_text_update_write_draw_icon.png"></Image>
+            </Button>
+            <Button Width="50" Height="50" Margin="5" x:Name="Remove_button" Grid.Column="2"  Visibility="Collapsed" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" BorderThickness="0">
+                <Image Source="..\Images\1564502_basket_delete_remove_icon.png"></Image>
+            </Button>
+
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="7*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+              
+            </Grid.RowDefinitions>
+            <Label VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Foreground="White" Grid.Row="0" Grid.Column="0" Content="Title"></Label>
+            <Label VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Foreground="White" Grid.Row="1" Grid.Column="0" Content="Start"></Label>
+            <Label VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Foreground="White" Grid.Row="2" Grid.Column="0" Content="End"></Label>
+          
+            <TextBox Text="{Binding Name}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" Height="40" Grid.Row="0" VerticalContentAlignment="Center" Grid.Column="1" IsReadOnly="True"  FontSize="18" Background="White"  BorderThickness="0" Margin="15" ></TextBox>
+            <TextBox Text="{Binding Starting_Address}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" Height="40"  VerticalContentAlignment="Center"  Grid.Row="1" Grid.Column="1" IsReadOnly="True"  FontSize="18" Background="White"  BorderThickness="0" Margin="15" ></TextBox>
+            <TextBox Text="{Binding Ending_Address}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" Height="40"  VerticalContentAlignment="Center"   Grid.Row="2" Grid.Column="1" IsReadOnly="True"  FontSize="18" Background="White"  BorderThickness="0" Margin="15" ></TextBox>
+         
+
+
+
+            <Button Name="ok_button" Grid.Row="3" Grid.Column="1" Width="35" Height="35" BorderThickness="0" Background="DarkOrange" Margin="5,5,15,15" VerticalAlignment="Bottom" HorizontalAlignment="Right" Visibility="Collapsed">
+                <Image Source="..\Images\103184_checkmark_yes_ok_check_icon.png"></Image>
+            </Button>
+        </Grid>
+
+
+
+    </Grid>
+</UserControl>

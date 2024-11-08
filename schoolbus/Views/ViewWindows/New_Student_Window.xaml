@@ -1,0 +1,45 @@
+﻿<Window x:Class="schoolbus.Views.ViewWindows.New_Student_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:schoolbus.Views.ViewWindows"
+        mc:Ignorable="d"
+        Title="New_Student_Window" Height="600" Width="450" ResizeMode="NoResize" WindowStyle="SingleBorderWindow"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="New Student" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center" Margin="15"></Label>
+        <TextBox  Name="firstname_textbox" GotFocus="_focus" LostFocus="_lost_focus" Grid.Row="1" Height="40" VerticalAlignment="Top" Text="Firstname" VerticalContentAlignment="Center" Margin="15,15,30,15"></TextBox>
+        <TextBox  Name="lastname_textbox" GotFocus="_focus" LostFocus="_lost_focus"  Grid.Row="2" Height="40" VerticalAlignment="Top" Text="Lastname" VerticalContentAlignment="Center" Margin="15,15,30,15"></TextBox>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="Parent" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></Label>
+            <ComboBox Name="parent_combo" Grid.Column="1" Height="40" VerticalContentAlignment="Center" Margin="15,15,30,15"></ComboBox>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="Class" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></Label>
+            <ComboBox Name="class_combo" Grid.Column="1" Height="40" VerticalContentAlignment="Center" Margin="15,15,30,15"></ComboBox>
+        </Grid>
+        <TextBox  Name="address1_textbox" GotFocus="_focus" LostFocus="_lost_focus"  Grid.Row="5" Height="40" VerticalAlignment="Top" Text="Home Address" VerticalContentAlignment="Center" Margin="15,15,30,15"></TextBox>
+        <TextBox  Name="address2_textbox" GotFocus="_focus" LostFocus="_lost_focus"  Grid.Row="6" Height="40" VerticalAlignment="Top" Text="Other Address" VerticalContentAlignment="Center" Margin="15,15,30,15"></TextBox>
+        <Button  Click="create_click" VerticalAlignment="Center" Grid.Row="7" Content="Create" FontSize="14" Foreground="White" Background="DarkOrange" Width="80" HorizontalAlignment="Right" Height="40" BorderThickness="0" Margin="0,0,30,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Button>
+
+    </Grid>
+</Window>

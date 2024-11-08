@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="User_Controls_for_Schoolbus\Student_2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User_Controls_for_Schoolbus\Student_3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User_Controls_for_Schoolbus\UserControl_Car.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User_Controls_for_Schoolbus\UserControl_Class.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User_Controls_for_Schoolbus\UserControl_Driver.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User_Controls_for_Schoolbus\UserControl_Parent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User_Controls_for_Schoolbus\UserControl_Ride.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User_Controls_for_Schoolbus\UserControl_Student.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Pages\Create_Ride_Page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Windows\New_Class_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Windows\New_Car_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Windows\New_Parent_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Windows\New_Student_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Windows\New_Driver_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Pages\Class_Page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Pages\Student_Page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Pages\Parent_Page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Pages\Driver_Page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Pages\Car_Page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Pages\Main_Page_.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Windows\Create_Ride2_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\ViewModel_Pages\Rides_Page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="User_Controls_for_Schoolbus\Student_2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User_Controls_for_Schoolbus\Student_3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User_Controls_for_Schoolbus\UserControl_Car.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User_Controls_for_Schoolbus\UserControl_Class.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User_Controls_for_Schoolbus\UserControl_Driver.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User_Controls_for_Schoolbus\UserControl_Parent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User_Controls_for_Schoolbus\UserControl_Ride.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User_Controls_for_Schoolbus\UserControl_Student.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewPages\Car_Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewPages\Class_Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewWindows\Create_Ride2_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewPages\Create_Ride_Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewPages\Driver_Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewPages\Main_Page_.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewPages\Parent_Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewPages\Rides_Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewPages\Student_Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewWindows\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewWindows\New_Car_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewWindows\New_Class_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewWindows\New_Driver_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewWindows\New_Parent_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewWindows\New_Student_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

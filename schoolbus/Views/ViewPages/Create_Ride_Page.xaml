@@ -1,0 +1,161 @@
+﻿<Page x:Class="schoolbus.Views.ViewPages.Create_Ride_Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:schoolbus.Views.ViewPages"
+      xmlns:mycontrol="clr-namespace:schoolbus.User_Controls_for_Schoolbus"
+
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Create_Ride_Page">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" ></Grid>
+        <Grid Grid.Column="1"></Grid>
+
+        <Button   Height="45" Width="75" Background="DarkOrange" Content="Refresh" Margin="30,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="0" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontSize="18" ></Button>
+
+        <Grid Grid.Column="0">
+           
+            <Grid VerticalAlignment="Center" Height="450">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                   
+                </Grid.RowDefinitions>
+
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Height="30" Content="Ride" FontSize="16"  VerticalContentAlignment="Center"></Label>
+                    <ComboBox Name="ride_combo" Grid.Column="1"  Margin="10" Height="30"></ComboBox>
+
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Height="30" Content="Driver" FontSize="16" VerticalContentAlignment="Center"></Label>
+                    <ComboBox Name="driver_combo" Grid.Column="1"  Margin="10" Height="30" IsEnabled="False"></ComboBox>
+
+                </Grid>
+                
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Height="30">
+                    <Label Width="115"  Content="Car Name:" FontSize="14" VerticalContentAlignment="Center"></Label>
+                    <Label Name="name_label" Width="185" FontSize="14" BorderThickness="0" VerticalContentAlignment="Center"></Label>
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal" Height="30">
+                    <Label Width="115"  Content="Car Number:" FontSize="14" VerticalContentAlignment="Center"></Label>
+                    <Label Name="number_label"  Width="185" FontSize="14" BorderThickness="0" VerticalContentAlignment="Center"></Label>
+                </StackPanel>
+
+
+                <StackPanel Grid.Row="4" Orientation="Horizontal" Height="30">
+                    <Label Width="115"  Content="Student Attend:" FontSize="14" VerticalContentAlignment="Center"></Label>
+                    <Label Name="student_label" Width="185" FontSize="14" BorderThickness="0" VerticalContentAlignment="Center"></Label>
+                </StackPanel>
+                <StackPanel Grid.Row="5" Orientation="Horizontal" Height="30">
+                    <Label Width="115"  Content="Max Seats:" FontSize="14" VerticalContentAlignment="Center"></Label>
+                    <Label Name="seat_label" Width="185" FontSize="14" BorderThickness="0" VerticalContentAlignment="Center"></Label>
+                </StackPanel>
+              
+                <Button Click="find_click"  Grid.Row="6" Content="Find" FontSize="14" Foreground="White" Background="DarkOrange" Width="80" HorizontalAlignment="Right" Height="30" BorderThickness="0" Margin="0,0,30,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Button>
+            </Grid>
+        </Grid>
+        
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.98*"></RowDefinition>
+                    <RowDefinition Height="0.02*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1" Background="DarkOrange"></Grid>
+
+
+
+
+                <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
+                    <WrapPanel >
+                        <ItemsControl ItemsSource="{Binding Olan_Students}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <mycontrol:Student_2 Margin="10"></mycontrol:Student_2>
+
+
+
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </WrapPanel>
+
+                </ScrollViewer>
+
+
+            </Grid>
+            
+            
+            
+            
+            
+           
+
+
+            <Grid Grid.Row="1" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.02*"></RowDefinition>
+                    <RowDefinition Height="0.98*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Background="DarkOrange"></Grid>
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                    <WrapPanel HorizontalAlignment="Right">
+                        <ItemsControl ItemsSource="{Binding Olmayan_Students}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <mycontrol:Student_3 Margin="10"></mycontrol:Student_3>
+
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </WrapPanel>
+
+                </ScrollViewer>
+            </Grid>
+            
+            
+           
+        </Grid>
+    </Grid>
+</Page>
